@@ -76,7 +76,7 @@
       .price_tag > h1 {
         color: hsl(158, 36%, 37%);
       }
-      .price_tag > h5 {
+      .price_tag > h4 {
         text-decoration: line-through;
       }
       button {
@@ -91,7 +91,7 @@
         color: white;
         padding: 1em;
       }
-      button > p {
+      button {
         font-weight: bold;
       }
       button:active {
@@ -123,7 +123,7 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
+    <div role="cell" class="wrapper">
       <picture>
         <source
           media="(max-width:650px)"
@@ -148,7 +148,7 @@
         </div>
         <div class="price_tag">
           <h1>$149.99</h1>
-          <h5>$169.99</h5>
+          <h4>$169.99</h4>
         </div>
         <button>
           <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -163,7 +163,7 @@
       </div>
     </div>
 
-    <div class="attribution">
+    <div role="contentinfo" class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
