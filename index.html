@@ -76,7 +76,7 @@
       .price_tag > h1 {
         color: hsl(158, 36%, 37%);
       }
-      .price_tag > h6 {
+      .price_tag > h5 {
         text-decoration: line-through;
       }
       button {
@@ -116,14 +116,6 @@
           max-height: 100%;
           gap: 1em;
         }
-        img {
-          display: none;
-        }
-        .mobile_img {
-          display: block;
-          max-width: 100%;
-          border-radius: 10px 10px 0px 0px;
-        }
         .details {
           padding: 0.6em 0.6em;
         }
@@ -132,12 +124,17 @@
   </head>
   <body>
     <div class="wrapper">
-      <img
-        class="mobile_img"
-        src="./images/image-product-mobile.jpg"
-        alt="product_preview_mobile"
-      />
-      <img src="./images/image-product-desktop.jpg" alt="product_preview" />
+      <picture>
+        <source
+          media="(max-width:650px)"
+          srcset="./images/image-product-mobile.jpg"
+        />
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt="product_preview_img"
+          style="max-width: 100%; border-radius: 10px 10px 0px 0px"
+        />
+      </picture>
       <div class="details">
         <div>
           <span>PERFUME</span>
