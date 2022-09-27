@@ -100,12 +100,9 @@
       button:hover {
         cursor: pointer;
       }
-      .mobile_img {
-        display: none;
-      }
 
       /* ---- Mobile desing styling --- */
-      @media (max-width: 600px) {
+      @media (max-width: 650px) {
         body {
           min-height: fit-content;
         }
@@ -119,6 +116,10 @@
         .details {
           padding: 0.6em 0.6em;
         }
+        img {
+          max-width: 100%;
+          border-radius: 10px 10px 0px 0px;
+        }
       }
     </style>
   </head>
@@ -126,13 +127,13 @@
     <div role="cell" class="wrapper">
       <picture>
         <source
-          media="(max-width:650px)"
+          media="(max-width:600px)"
           srcset="./images/image-product-mobile.jpg"
         />
         <img
           src="./images/image-product-desktop.jpg"
           alt="product_preview_img"
-          style="max-width: 100%; border-radius: 10px 10px 0px 0px"
+          style="width: auto"
         />
       </picture>
       <div class="details">
